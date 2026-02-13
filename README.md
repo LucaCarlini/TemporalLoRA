@@ -8,6 +8,10 @@ This repository includes:
 - Temporal adapter modules and adapter installers
 - REAL-Colon-VQA annotation files (in-domain and out-of-domain variants)
 
+## Method Figure
+
+![TemporalLoRA architecture](figs/temporallora_schema.png)
+
 ## Repository Layout
 
 ```text
