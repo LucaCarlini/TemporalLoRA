@@ -1,0 +1,990 @@
+{
+  "train": {
+    "short": {
+      "total_items": 3549,
+      "question_lengths": {
+        "min_chars": 20,
+        "max_chars": 66,
+        "avg_chars": 42.76,
+        "min_words": 5,
+        "max_words": 14,
+        "avg_words": 7.45
+      },
+      "answer_lengths": {
+        "min_chars": 2,
+        "max_chars": 12,
+        "avg_chars": 4.46,
+        "min_words": 1,
+        "max_words": 1,
+        "avg_words": 1.0
+      },
+      "question_type_counts": {
+        "mucosa_visibility": 280,
+        "tool_identification": 280,
+        "occlusion_check": 280,
+        "fluid_occlusion_level": 280,
+        "flush_action": 280,
+        "procedure_type": 280,
+        "nbi_status": 240,
+        "lighting_mode": 240,
+        "scope_outside": 210,
+        "scope_motion_type": 175,
+        "scope_motion": 168,
+        "scope_forward_motion": 168,
+        "scope_backward_motion": 168,
+        "endoscope_visibility": 160,
+        "tool_catheter_check": 80,
+        "lesion_motion_direction": 60,
+        "lesion_histology_extended": 50,
+        "lesion_size_range": 50,
+        "lesion_site": 50,
+        "lesion_screen_position": 50
+      },
+      "answer_type_counts": {
+        "no": 1017,
+        "yes": 1017,
+        "NBI": 240,
+        "forceps": 227,
+        "complete": 140,
+        "absent": 140,
+        "navigation": 102,
+        "flushing": 99,
+        "withdrawing": 91,
+        "advancing": 84,
+        "polypectomy": 79,
+        "<5": 50,
+        "snare": 27,
+        "catheter": 26,
+        "hyperplastic": 25,
+        "adenoma": 25,
+        "ascending": 17,
+        "rectum": 17,
+        "sigma": 16,
+        "lower-right": 14,
+        "upper-right": 12,
+        "upper-left": 12,
+        "lower-left": 12,
+        "right": 12,
+        "stable": 12,
+        "left": 12,
+        "down": 12,
+        "up": 12
+      },
+      "multiclass_answer_counts": {
+        "tool_identification": {
+          "forceps": 227,
+          "snare": 27,
+          "catheter": 26
+        },
+        "lighting_mode": {
+          "NBI": 240
+        },
+        "fluid_occlusion_level": {
+          "complete": 140,
+          "absent": 140
+        },
+        "procedure_type": {
+          "navigation": 102,
+          "flushing": 99,
+          "polypectomy": 79
+        },
+        "scope_motion_type": {
+          "withdrawing": 91,
+          "advancing": 84
+        },
+        "lesion_histology_extended": {
+          "hyperplastic": 25,
+          "adenoma": 25
+        },
+        "lesion_size_range": {
+          "<5": 50
+        },
+        "lesion_site": {
+          "ascending": 17,
+          "rectum": 17,
+          "sigma": 16
+        },
+        "lesion_screen_position": {
+          "lower-right": 14,
+          "upper-right": 12,
+          "upper-left": 12,
+          "lower-left": 12
+        },
+        "lesion_motion_direction": {
+          "right": 12,
+          "stable": 12,
+          "left": 12,
+          "down": 12,
+          "up": 12
+        }
+      }
+    },
+    "long": {
+      "total_items": 3549,
+      "question_lengths": {
+        "min_chars": 20,
+        "max_chars": 66,
+        "avg_chars": 42.76,
+        "min_words": 5,
+        "max_words": 14,
+        "avg_words": 7.45
+      },
+      "answer_lengths": {
+        "min_chars": 20,
+        "max_chars": 61,
+        "avg_chars": 38.14,
+        "min_words": 4,
+        "max_words": 10,
+        "avg_words": 6.56
+      },
+      "question_type_counts": {
+        "mucosa_visibility": 280,
+        "tool_identification": 280,
+        "occlusion_check": 280,
+        "fluid_occlusion_level": 280,
+        "flush_action": 280,
+        "procedure_type": 280,
+        "nbi_status": 240,
+        "lighting_mode": 240,
+        "scope_outside": 210,
+        "scope_motion_type": 175,
+        "scope_motion": 168,
+        "scope_forward_motion": 168,
+        "scope_backward_motion": 168,
+        "endoscope_visibility": 160,
+        "tool_catheter_check": 80,
+        "lesion_motion_direction": 60,
+        "lesion_histology_extended": 50,
+        "lesion_size_range": 50,
+        "lesion_site": 50,
+        "lesion_screen_position": 50
+      },
+      "answer_type_counts": {
+        "NBI light is on in this sequence.": 240,
+        "Forceps are visible on screen.": 227,
+        "No, clean mucosa is not consistently visible.": 140,
+        "Yes, clean mucosa is visible across frames.": 140,
+        "No, clean mucosa stays visible without obstruction.": 140,
+        "Yes, a close-up obstruction blocks the view.": 140,
+        "Fluid occlusion completely obscures the view.": 140,
+        "Fluid occlusion is absent and clean mucosa is visible.": 140,
+        "Yes, the endoscopist is flushing the scene.": 140,
+        "No, there is no flushing observed.": 140,
+        "Yes, NBI light is on in these frames.": 120,
+        "No, WL light is on instead.": 120,
+        "Yes, the scope is outside the patient.": 105,
+        "No, the scope stays within the patient.": 105,
+        "The clip shows colonoscopy navigation.": 102,
+        "The clip shows flushing of the mucosa.": 99,
+        "The scope is primarily withdrawing.": 91,
+        "Yes, the scope is moving across the frames.": 84,
+        "No, the scope is not moving in these frames.": 84,
+        "Yes, the scope is advancing.": 84,
+        "No, the scope is withdrawing.": 84,
+        "Yes, the scope is withdrawing.": 84,
+        "No, the scope is advancing.": 84,
+        "The scope is primarily advancing.": 84,
+        "No, the endoscope body is not visible.": 80,
+        "Yes, the endoscope body is visible in the frames.": 80,
+        "The clip shows a polypectomy being performed.": 79,
+        "The lesion is <5 mm.": 50,
+        "No, the visible tool is not a catheter.": 40,
+        "Yes, the visible tool is a catheter.": 40,
+        "Snare is visible on screen.": 27,
+        "Catheter is visible on screen.": 26,
+        "Histology corresponds to hyperplastic.": 25,
+        "Histology corresponds to adenoma.": 25,
+        "The lesion is located in the ascending.": 17,
+        "The lesion is located in the rectum.": 17,
+        "The lesion is located in the sigma.": 16,
+        "The lesion appears in the lower-right quadrant of the screen.": 14,
+        "The lesion appears in the upper-right quadrant of the screen.": 12,
+        "The lesion appears in the upper-left quadrant of the screen.": 12,
+        "The lesion appears in the lower-left quadrant of the screen.": 12,
+        "The lesion moves to the right.": 12,
+        "The lesion is stable.": 12,
+        "The lesion moves to the left.": 12,
+        "The lesion moves down.": 12,
+        "The lesion moves up.": 12
+      },
+      "multiclass_answer_counts": {
+        "tool_identification": {
+          "Forceps are visible on screen.": 227,
+          "Snare is visible on screen.": 27,
+          "Catheter is visible on screen.": 26
+        },
+        "lighting_mode": {
+          "NBI light is on in this sequence.": 240
+        },
+        "fluid_occlusion_level": {
+          "Fluid occlusion completely obscures the view.": 140,
+          "Fluid occlusion is absent and clean mucosa is visible.": 140
+        },
+        "procedure_type": {
+          "The clip shows colonoscopy navigation.": 102,
+          "The clip shows flushing of the mucosa.": 99,
+          "The clip shows a polypectomy being performed.": 79
+        },
+        "scope_motion_type": {
+          "The scope is primarily withdrawing.": 91,
+          "The scope is primarily advancing.": 84
+        },
+        "lesion_histology_extended": {
+          "Histology corresponds to hyperplastic.": 25,
+          "Histology corresponds to adenoma.": 25
+        },
+        "lesion_size_range": {
+          "The lesion is <5 mm.": 50
+        },
+        "lesion_site": {
+          "The lesion is located in the ascending.": 17,
+          "The lesion is located in the rectum.": 17,
+          "The lesion is located in the sigma.": 16
+        },
+        "lesion_screen_position": {
+          "The lesion appears in the lower-right quadrant of the screen.": 14,
+          "The lesion appears in the upper-right quadrant of the screen.": 12,
+          "The lesion appears in the upper-left quadrant of the screen.": 12,
+          "The lesion appears in the lower-left quadrant of the screen.": 12
+        },
+        "lesion_motion_direction": {
+          "The lesion moves to the right.": 12,
+          "The lesion is stable.": 12,
+          "The lesion moves to the left.": 12,
+          "The lesion moves down.": 12,
+          "The lesion moves up.": 12
+        }
+      },
+      "short_answer_lengths": {
+        "min_chars": 2,
+        "max_chars": 12,
+        "avg_chars": 4.46,
+        "min_words": 1,
+        "max_words": 1,
+        "avg_words": 1.0
+      },
+      "short_answer_type_counts": {
+        "no": 1017,
+        "yes": 1017,
+        "NBI": 240,
+        "forceps": 227,
+        "complete": 140,
+        "absent": 140,
+        "navigation": 102,
+        "flushing": 99,
+        "withdrawing": 91,
+        "advancing": 84,
+        "polypectomy": 79,
+        "<5": 50,
+        "snare": 27,
+        "catheter": 26,
+        "hyperplastic": 25,
+        "adenoma": 25,
+        "ascending": 17,
+        "rectum": 17,
+        "sigma": 16,
+        "lower-right": 14,
+        "upper-right": 12,
+        "upper-left": 12,
+        "lower-left": 12,
+        "right": 12,
+        "stable": 12,
+        "left": 12,
+        "down": 12,
+        "up": 12
+      },
+      "multiclass_short_answer_counts": {
+        "tool_identification": {
+          "forceps": 227,
+          "snare": 27,
+          "catheter": 26
+        },
+        "lighting_mode": {
+          "NBI": 240
+        },
+        "fluid_occlusion_level": {
+          "complete": 140,
+          "absent": 140
+        },
+        "procedure_type": {
+          "navigation": 102,
+          "flushing": 99,
+          "polypectomy": 79
+        },
+        "scope_motion_type": {
+          "withdrawing": 91,
+          "advancing": 84
+        },
+        "lesion_histology_extended": {
+          "hyperplastic": 25,
+          "adenoma": 25
+        },
+        "lesion_size_range": {
+          "<5": 50
+        },
+        "lesion_site": {
+          "ascending": 17,
+          "rectum": 17,
+          "sigma": 16
+        },
+        "lesion_screen_position": {
+          "lower-right": 14,
+          "upper-right": 12,
+          "upper-left": 12,
+          "lower-left": 12
+        },
+        "lesion_motion_direction": {
+          "right": 12,
+          "stable": 12,
+          "left": 12,
+          "down": 12,
+          "up": 12
+        }
+      }
+    }
+  },
+  "val": {
+    "short": {
+      "total_items": 1154,
+      "question_lengths": {
+        "min_chars": 20,
+        "max_chars": 66,
+        "avg_chars": 43.52,
+        "min_words": 5,
+        "max_words": 14,
+        "avg_words": 7.77
+      },
+      "answer_lengths": {
+        "min_chars": 2,
+        "max_chars": 12,
+        "avg_chars": 4.94,
+        "min_words": 1,
+        "max_words": 1,
+        "avg_words": 1.0
+      },
+      "question_type_counts": {
+        "mucosa_visibility": 80,
+        "tool_identification": 80,
+        "nbi_status": 80,
+        "lighting_mode": 80,
+        "occlusion_check": 80,
+        "fluid_occlusion_level": 80,
+        "flush_action": 80,
+        "procedure_type": 80,
+        "scope_outside": 60,
+        "lesion_motion_direction": 60,
+        "scope_motion_type": 50,
+        "lesion_histology_extended": 50,
+        "lesion_size_range": 50,
+        "lesion_site": 50,
+        "lesion_screen_position": 50,
+        "scope_motion": 48,
+        "scope_forward_motion": 48,
+        "scope_backward_motion": 48
+      },
+      "answer_type_counts": {
+        "yes": 262,
+        "no": 262,
+        "forceps": 80,
+        "NBI": 80,
+        "hyperplastic": 50,
+        "<5": 50,
+        "complete": 40,
+        "absent": 40,
+        "navigation": 28,
+        "flushing": 26,
+        "polypectomy": 26,
+        "withdrawing": 26,
+        "rectum": 25,
+        "sigma": 25,
+        "advancing": 24,
+        "upper-right": 13,
+        "lower-left": 13,
+        "upper-left": 12,
+        "lower-right": 12,
+        "up": 12,
+        "right": 12,
+        "left": 12,
+        "down": 12,
+        "stable": 12
+      },
+      "multiclass_answer_counts": {
+        "tool_identification": {
+          "forceps": 80
+        },
+        "lighting_mode": {
+          "NBI": 80
+        },
+        "fluid_occlusion_level": {
+          "complete": 40,
+          "absent": 40
+        },
+        "procedure_type": {
+          "navigation": 28,
+          "flushing": 26,
+          "polypectomy": 26
+        },
+        "scope_motion_type": {
+          "withdrawing": 26,
+          "advancing": 24
+        },
+        "lesion_histology_extended": {
+          "hyperplastic": 50
+        },
+        "lesion_size_range": {
+          "<5": 50
+        },
+        "lesion_site": {
+          "rectum": 25,
+          "sigma": 25
+        },
+        "lesion_screen_position": {
+          "upper-right": 13,
+          "lower-left": 13,
+          "upper-left": 12,
+          "lower-right": 12
+        },
+        "lesion_motion_direction": {
+          "up": 12,
+          "right": 12,
+          "left": 12,
+          "down": 12,
+          "stable": 12
+        }
+      }
+    },
+    "long": {
+      "total_items": 1154,
+      "question_lengths": {
+        "min_chars": 20,
+        "max_chars": 66,
+        "avg_chars": 43.52,
+        "min_words": 5,
+        "max_words": 14,
+        "avg_words": 7.77
+      },
+      "answer_lengths": {
+        "min_chars": 20,
+        "max_chars": 61,
+        "avg_chars": 37.42,
+        "min_words": 4,
+        "max_words": 10,
+        "avg_words": 6.42
+      },
+      "question_type_counts": {
+        "mucosa_visibility": 80,
+        "tool_identification": 80,
+        "nbi_status": 80,
+        "lighting_mode": 80,
+        "occlusion_check": 80,
+        "fluid_occlusion_level": 80,
+        "flush_action": 80,
+        "procedure_type": 80,
+        "scope_outside": 60,
+        "lesion_motion_direction": 60,
+        "scope_motion_type": 50,
+        "lesion_histology_extended": 50,
+        "lesion_size_range": 50,
+        "lesion_site": 50,
+        "lesion_screen_position": 50,
+        "scope_motion": 48,
+        "scope_forward_motion": 48,
+        "scope_backward_motion": 48
+      },
+      "answer_type_counts": {
+        "Forceps are visible on screen.": 80,
+        "NBI light is on in this sequence.": 80,
+        "Histology corresponds to hyperplastic.": 50,
+        "The lesion is <5 mm.": 50,
+        "Yes, clean mucosa is visible across frames.": 40,
+        "No, clean mucosa is not consistently visible.": 40,
+        "No, WL light is on instead.": 40,
+        "Yes, NBI light is on in these frames.": 40,
+        "No, clean mucosa stays visible without obstruction.": 40,
+        "Yes, a close-up obstruction blocks the view.": 40,
+        "Fluid occlusion completely obscures the view.": 40,
+        "Fluid occlusion is absent and clean mucosa is visible.": 40,
+        "Yes, the endoscopist is flushing the scene.": 40,
+        "No, there is no flushing observed.": 40,
+        "No, the scope stays within the patient.": 30,
+        "Yes, the scope is outside the patient.": 30,
+        "The clip shows colonoscopy navigation.": 28,
+        "The clip shows flushing of the mucosa.": 26,
+        "The clip shows a polypectomy being performed.": 26,
+        "The scope is primarily withdrawing.": 26,
+        "The lesion is located in the rectum.": 25,
+        "The lesion is located in the sigma.": 25,
+        "Yes, the scope is moving across the frames.": 24,
+        "No, the scope is not moving in these frames.": 24,
+        "No, the scope is withdrawing.": 24,
+        "Yes, the scope is advancing.": 24,
+        "Yes, the scope is withdrawing.": 24,
+        "No, the scope is advancing.": 24,
+        "The scope is primarily advancing.": 24,
+        "The lesion appears in the upper-right quadrant of the screen.": 13,
+        "The lesion appears in the lower-left quadrant of the screen.": 13,
+        "The lesion appears in the upper-left quadrant of the screen.": 12,
+        "The lesion appears in the lower-right quadrant of the screen.": 12,
+        "The lesion moves up.": 12,
+        "The lesion moves to the right.": 12,
+        "The lesion moves to the left.": 12,
+        "The lesion moves down.": 12,
+        "The lesion is stable.": 12
+      },
+      "multiclass_answer_counts": {
+        "tool_identification": {
+          "Forceps are visible on screen.": 80
+        },
+        "lighting_mode": {
+          "NBI light is on in this sequence.": 80
+        },
+        "fluid_occlusion_level": {
+          "Fluid occlusion completely obscures the view.": 40,
+          "Fluid occlusion is absent and clean mucosa is visible.": 40
+        },
+        "procedure_type": {
+          "The clip shows colonoscopy navigation.": 28,
+          "The clip shows flushing of the mucosa.": 26,
+          "The clip shows a polypectomy being performed.": 26
+        },
+        "scope_motion_type": {
+          "The scope is primarily withdrawing.": 26,
+          "The scope is primarily advancing.": 24
+        },
+        "lesion_histology_extended": {
+          "Histology corresponds to hyperplastic.": 50
+        },
+        "lesion_size_range": {
+          "The lesion is <5 mm.": 50
+        },
+        "lesion_site": {
+          "The lesion is located in the rectum.": 25,
+          "The lesion is located in the sigma.": 25
+        },
+        "lesion_screen_position": {
+          "The lesion appears in the upper-right quadrant of the screen.": 13,
+          "The lesion appears in the lower-left quadrant of the screen.": 13,
+          "The lesion appears in the upper-left quadrant of the screen.": 12,
+          "The lesion appears in the lower-right quadrant of the screen.": 12
+        },
+        "lesion_motion_direction": {
+          "The lesion moves up.": 12,
+          "The lesion moves to the right.": 12,
+          "The lesion moves to the left.": 12,
+          "The lesion moves down.": 12,
+          "The lesion is stable.": 12
+        }
+      },
+      "short_answer_lengths": {
+        "min_chars": 2,
+        "max_chars": 12,
+        "avg_chars": 4.94,
+        "min_words": 1,
+        "max_words": 1,
+        "avg_words": 1.0
+      },
+      "short_answer_type_counts": {
+        "yes": 262,
+        "no": 262,
+        "forceps": 80,
+        "NBI": 80,
+        "hyperplastic": 50,
+        "<5": 50,
+        "complete": 40,
+        "absent": 40,
+        "navigation": 28,
+        "flushing": 26,
+        "polypectomy": 26,
+        "withdrawing": 26,
+        "rectum": 25,
+        "sigma": 25,
+        "advancing": 24,
+        "upper-right": 13,
+        "lower-left": 13,
+        "upper-left": 12,
+        "lower-right": 12,
+        "up": 12,
+        "right": 12,
+        "left": 12,
+        "down": 12,
+        "stable": 12
+      },
+      "multiclass_short_answer_counts": {
+        "tool_identification": {
+          "forceps": 80
+        },
+        "lighting_mode": {
+          "NBI": 80
+        },
+        "fluid_occlusion_level": {
+          "complete": 40,
+          "absent": 40
+        },
+        "procedure_type": {
+          "navigation": 28,
+          "flushing": 26,
+          "polypectomy": 26
+        },
+        "scope_motion_type": {
+          "withdrawing": 26,
+          "advancing": 24
+        },
+        "lesion_histology_extended": {
+          "hyperplastic": 50
+        },
+        "lesion_size_range": {
+          "<5": 50
+        },
+        "lesion_site": {
+          "rectum": 25,
+          "sigma": 25
+        },
+        "lesion_screen_position": {
+          "upper-right": 13,
+          "lower-left": 13,
+          "upper-left": 12,
+          "lower-right": 12
+        },
+        "lesion_motion_direction": {
+          "up": 12,
+          "right": 12,
+          "left": 12,
+          "down": 12,
+          "stable": 12
+        }
+      }
+    }
+  },
+  "test": {
+    "short": {
+      "total_items": 1721,
+      "question_lengths": {
+        "min_chars": 20,
+        "max_chars": 66,
+        "avg_chars": 42.37,
+        "min_words": 5,
+        "max_words": 14,
+        "avg_words": 7.5
+      },
+      "answer_lengths": {
+        "min_chars": 2,
+        "max_chars": 12,
+        "avg_chars": 4.56,
+        "min_words": 1,
+        "max_words": 1,
+        "avg_words": 1.0
+      },
+      "question_type_counts": {
+        "mucosa_visibility": 120,
+        "nbi_status": 120,
+        "lighting_mode": 120,
+        "occlusion_check": 120,
+        "fluid_occlusion_level": 120,
+        "flush_action": 120,
+        "procedure_type": 120,
+        "scope_outside": 90,
+        "tool_identification": 80,
+        "tool_catheter_check": 80,
+        "endoscope_visibility": 80,
+        "scope_motion_type": 75,
+        "scope_motion": 72,
+        "scope_forward_motion": 72,
+        "scope_backward_motion": 72,
+        "lesion_motion_direction": 60,
+        "lesion_histology_extended": 50,
+        "lesion_size_range": 50,
+        "lesion_site": 50,
+        "lesion_screen_position": 50
+      },
+      "answer_type_counts": {
+        "yes": 473,
+        "no": 473,
+        "NBI": 120,
+        "complete": 60,
+        "absent": 60,
+        "flushing": 54,
+        "navigation": 53,
+        "<5": 50,
+        "descending": 50,
+        "withdrawing": 39,
+        "advancing": 36,
+        "forceps": 34,
+        "catheter": 33,
+        "hyperplastic": 25,
+        "adenoma": 25,
+        "lower-right": 14,
+        "snare": 13,
+        "polypectomy": 13,
+        "upper-left": 12,
+        "lower-left": 12,
+        "upper-right": 12,
+        "stable": 12,
+        "right": 12,
+        "left": 12,
+        "up": 12,
+        "down": 12
+      },
+      "multiclass_answer_counts": {
+        "tool_identification": {
+          "forceps": 34,
+          "catheter": 33,
+          "snare": 13
+        },
+        "lighting_mode": {
+          "NBI": 120
+        },
+        "fluid_occlusion_level": {
+          "complete": 60,
+          "absent": 60
+        },
+        "procedure_type": {
+          "flushing": 54,
+          "navigation": 53,
+          "polypectomy": 13
+        },
+        "scope_motion_type": {
+          "withdrawing": 39,
+          "advancing": 36
+        },
+        "lesion_histology_extended": {
+          "hyperplastic": 25,
+          "adenoma": 25
+        },
+        "lesion_size_range": {
+          "<5": 50
+        },
+        "lesion_site": {
+          "descending": 50
+        },
+        "lesion_screen_position": {
+          "lower-right": 14,
+          "upper-left": 12,
+          "lower-left": 12,
+          "upper-right": 12
+        },
+        "lesion_motion_direction": {
+          "stable": 12,
+          "right": 12,
+          "left": 12,
+          "up": 12,
+          "down": 12
+        }
+      }
+    },
+    "long": {
+      "total_items": 1721,
+      "question_lengths": {
+        "min_chars": 20,
+        "max_chars": 66,
+        "avg_chars": 42.37,
+        "min_words": 5,
+        "max_words": 14,
+        "avg_words": 7.5
+      },
+      "answer_lengths": {
+        "min_chars": 20,
+        "max_chars": 61,
+        "avg_chars": 37.97,
+        "min_words": 4,
+        "max_words": 10,
+        "avg_words": 6.59
+      },
+      "question_type_counts": {
+        "mucosa_visibility": 120,
+        "nbi_status": 120,
+        "lighting_mode": 120,
+        "occlusion_check": 120,
+        "fluid_occlusion_level": 120,
+        "flush_action": 120,
+        "procedure_type": 120,
+        "scope_outside": 90,
+        "tool_identification": 80,
+        "tool_catheter_check": 80,
+        "endoscope_visibility": 80,
+        "scope_motion_type": 75,
+        "scope_motion": 72,
+        "scope_forward_motion": 72,
+        "scope_backward_motion": 72,
+        "lesion_motion_direction": 60,
+        "lesion_histology_extended": 50,
+        "lesion_size_range": 50,
+        "lesion_site": 50,
+        "lesion_screen_position": 50
+      },
+      "answer_type_counts": {
+        "NBI light is on in this sequence.": 120,
+        "Yes, clean mucosa is visible across frames.": 60,
+        "No, clean mucosa is not consistently visible.": 60,
+        "No, WL light is on instead.": 60,
+        "Yes, NBI light is on in these frames.": 60,
+        "Yes, a close-up obstruction blocks the view.": 60,
+        "No, clean mucosa stays visible without obstruction.": 60,
+        "Fluid occlusion completely obscures the view.": 60,
+        "Fluid occlusion is absent and clean mucosa is visible.": 60,
+        "No, there is no flushing observed.": 60,
+        "Yes, the endoscopist is flushing the scene.": 60,
+        "The clip shows flushing of the mucosa.": 54,
+        "The clip shows colonoscopy navigation.": 53,
+        "The lesion is <5 mm.": 50,
+        "The lesion is located in the descending.": 50,
+        "Yes, the scope is outside the patient.": 45,
+        "No, the scope stays within the patient.": 45,
+        "No, the visible tool is not a catheter.": 40,
+        "Yes, the visible tool is a catheter.": 40,
+        "Yes, the endoscope body is visible in the frames.": 40,
+        "No, the endoscope body is not visible.": 40,
+        "The scope is primarily withdrawing.": 39,
+        "Yes, the scope is moving across the frames.": 36,
+        "No, the scope is not moving in these frames.": 36,
+        "No, the scope is withdrawing.": 36,
+        "Yes, the scope is advancing.": 36,
+        "Yes, the scope is withdrawing.": 36,
+        "No, the scope is advancing.": 36,
+        "The scope is primarily advancing.": 36,
+        "Forceps are visible on screen.": 34,
+        "Catheter is visible on screen.": 33,
+        "Histology corresponds to hyperplastic.": 25,
+        "Histology corresponds to adenoma.": 25,
+        "The lesion appears in the lower-right quadrant of the screen.": 14,
+        "Snare is visible on screen.": 13,
+        "The clip shows a polypectomy being performed.": 13,
+        "The lesion appears in the upper-left quadrant of the screen.": 12,
+        "The lesion appears in the lower-left quadrant of the screen.": 12,
+        "The lesion appears in the upper-right quadrant of the screen.": 12,
+        "The lesion is stable.": 12,
+        "The lesion moves to the right.": 12,
+        "The lesion moves to the left.": 12,
+        "The lesion moves up.": 12,
+        "The lesion moves down.": 12
+      },
+      "multiclass_answer_counts": {
+        "tool_identification": {
+          "Forceps are visible on screen.": 34,
+          "Catheter is visible on screen.": 33,
+          "Snare is visible on screen.": 13
+        },
+        "lighting_mode": {
+          "NBI light is on in this sequence.": 120
+        },
+        "fluid_occlusion_level": {
+          "Fluid occlusion completely obscures the view.": 60,
+          "Fluid occlusion is absent and clean mucosa is visible.": 60
+        },
+        "procedure_type": {
+          "The clip shows flushing of the mucosa.": 54,
+          "The clip shows colonoscopy navigation.": 53,
+          "The clip shows a polypectomy being performed.": 13
+        },
+        "scope_motion_type": {
+          "The scope is primarily withdrawing.": 39,
+          "The scope is primarily advancing.": 36
+        },
+        "lesion_histology_extended": {
+          "Histology corresponds to hyperplastic.": 25,
+          "Histology corresponds to adenoma.": 25
+        },
+        "lesion_size_range": {
+          "The lesion is <5 mm.": 50
+        },
+        "lesion_site": {
+          "The lesion is located in the descending.": 50
+        },
+        "lesion_screen_position": {
+          "The lesion appears in the lower-right quadrant of the screen.": 14,
+          "The lesion appears in the upper-left quadrant of the screen.": 12,
+          "The lesion appears in the lower-left quadrant of the screen.": 12,
+          "The lesion appears in the upper-right quadrant of the screen.": 12
+        },
+        "lesion_motion_direction": {
+          "The lesion is stable.": 12,
+          "The lesion moves to the right.": 12,
+          "The lesion moves to the left.": 12,
+          "The lesion moves up.": 12,
+          "The lesion moves down.": 12
+        }
+      },
+      "short_answer_lengths": {
+        "min_chars": 2,
+        "max_chars": 12,
+        "avg_chars": 4.56,
+        "min_words": 1,
+        "max_words": 1,
+        "avg_words": 1.0
+      },
+      "short_answer_type_counts": {
+        "yes": 473,
+        "no": 473,
+        "NBI": 120,
+        "complete": 60,
+        "absent": 60,
+        "flushing": 54,
+        "navigation": 53,
+        "<5": 50,
+        "descending": 50,
+        "withdrawing": 39,
+        "advancing": 36,
+        "forceps": 34,
+        "catheter": 33,
+        "hyperplastic": 25,
+        "adenoma": 25,
+        "lower-right": 14,
+        "snare": 13,
+        "polypectomy": 13,
+        "upper-left": 12,
+        "lower-left": 12,
+        "upper-right": 12,
+        "stable": 12,
+        "right": 12,
+        "left": 12,
+        "up": 12,
+        "down": 12
+      },
+      "multiclass_short_answer_counts": {
+        "tool_identification": {
+          "forceps": 34,
+          "catheter": 33,
+          "snare": 13
+        },
+        "lighting_mode": {
+          "NBI": 120
+        },
+        "fluid_occlusion_level": {
+          "complete": 60,
+          "absent": 60
+        },
+        "procedure_type": {
+          "flushing": 54,
+          "navigation": 53,
+          "polypectomy": 13
+        },
+        "scope_motion_type": {
+          "withdrawing": 39,
+          "advancing": 36
+        },
+        "lesion_histology_extended": {
+          "hyperplastic": 25,
+          "adenoma": 25
+        },
+        "lesion_size_range": {
+          "<5": 50
+        },
+        "lesion_site": {
+          "descending": 50
+        },
+        "lesion_screen_position": {
+          "lower-right": 14,
+          "upper-left": 12,
+          "lower-left": 12,
+          "upper-right": 12
+        },
+        "lesion_motion_direction": {
+          "stable": 12,
+          "right": 12,
+          "left": 12,
+          "up": 12,
+          "down": 12
+        }
+      }
+    }
+  }
+}

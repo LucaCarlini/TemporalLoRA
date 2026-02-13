@@ -1,0 +1,412 @@
+{
+  "train": {
+    "short": {
+      "mucosa_visibility": {
+        "yes": 140,
+        "no": 140,
+        "total": 280,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "tool_catheter_check": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "endoscope_visibility": {
+        "yes": 80,
+        "no": 80,
+        "total": 160,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "nbi_status": {
+        "yes": 120,
+        "no": 120,
+        "total": 240,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "occlusion_check": {
+        "yes": 140,
+        "no": 140,
+        "total": 280,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_motion": {
+        "yes": 84,
+        "no": 84,
+        "total": 168,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_forward_motion": {
+        "yes": 84,
+        "no": 84,
+        "total": 168,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_backward_motion": {
+        "yes": 84,
+        "no": 84,
+        "total": 168,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_outside": {
+        "yes": 105,
+        "no": 105,
+        "total": 210,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "flush_action": {
+        "yes": 140,
+        "no": 140,
+        "total": 280,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      }
+    },
+    "long": {
+      "mucosa_visibility": {
+        "yes": 140,
+        "no": 140,
+        "total": 280,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "tool_catheter_check": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "endoscope_visibility": {
+        "yes": 80,
+        "no": 80,
+        "total": 160,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "nbi_status": {
+        "yes": 120,
+        "no": 120,
+        "total": 240,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "occlusion_check": {
+        "yes": 140,
+        "no": 140,
+        "total": 280,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_motion": {
+        "yes": 84,
+        "no": 84,
+        "total": 168,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_forward_motion": {
+        "yes": 84,
+        "no": 84,
+        "total": 168,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_backward_motion": {
+        "yes": 84,
+        "no": 84,
+        "total": 168,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_outside": {
+        "yes": 105,
+        "no": 105,
+        "total": 210,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "flush_action": {
+        "yes": 140,
+        "no": 140,
+        "total": 280,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      }
+    }
+  },
+  "val": {
+    "short": {
+      "mucosa_visibility": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "nbi_status": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "occlusion_check": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_motion": {
+        "yes": 24,
+        "no": 24,
+        "total": 48,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_forward_motion": {
+        "yes": 24,
+        "no": 24,
+        "total": 48,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_backward_motion": {
+        "yes": 24,
+        "no": 24,
+        "total": 48,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_outside": {
+        "yes": 30,
+        "no": 30,
+        "total": 60,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "flush_action": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      }
+    },
+    "long": {
+      "mucosa_visibility": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "nbi_status": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "occlusion_check": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_motion": {
+        "yes": 24,
+        "no": 24,
+        "total": 48,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_forward_motion": {
+        "yes": 24,
+        "no": 24,
+        "total": 48,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_backward_motion": {
+        "yes": 24,
+        "no": 24,
+        "total": 48,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_outside": {
+        "yes": 30,
+        "no": 30,
+        "total": 60,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "flush_action": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      }
+    }
+  },
+  "test": {
+    "short": {
+      "mucosa_visibility": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "tool_catheter_check": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "endoscope_visibility": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "nbi_status": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "occlusion_check": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_motion": {
+        "yes": 36,
+        "no": 36,
+        "total": 72,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_forward_motion": {
+        "yes": 36,
+        "no": 36,
+        "total": 72,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_backward_motion": {
+        "yes": 36,
+        "no": 36,
+        "total": 72,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_outside": {
+        "yes": 45,
+        "no": 45,
+        "total": 90,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "flush_action": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      }
+    },
+    "long": {
+      "mucosa_visibility": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "tool_catheter_check": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "endoscope_visibility": {
+        "yes": 40,
+        "no": 40,
+        "total": 80,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "nbi_status": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "occlusion_check": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_motion": {
+        "yes": 36,
+        "no": 36,
+        "total": 72,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_forward_motion": {
+        "yes": 36,
+        "no": 36,
+        "total": 72,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_backward_motion": {
+        "yes": 36,
+        "no": 36,
+        "total": 72,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "scope_outside": {
+        "yes": 45,
+        "no": 45,
+        "total": 90,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      },
+      "flush_action": {
+        "yes": 60,
+        "no": 60,
+        "total": 120,
+        "yes_ratio": 0.5,
+        "no_ratio": 0.5
+      }
+    }
+  }
+}

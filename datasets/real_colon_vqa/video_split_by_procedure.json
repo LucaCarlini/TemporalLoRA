@@ -1,0 +1,20 @@
+{
+  "train": [
+    "002-008_merged_frame_annotations",
+    "002-006_merged_frame_annotations",
+    "002-003_merged_frame_annotations",
+    "002-009_merged_frame_annotations",
+    "002-010_merged_frame_annotations",
+    "002-007_merged_frame_annotations",
+    "002-012_merged_frame_annotations"
+  ],
+  "val": [
+    "002-004_merged_frame_annotations",
+    "002-005_merged_frame_annotations"
+  ],
+  "test": [
+    "002-001_merged_frame_annotations",
+    "002-002_merged_frame_annotations",
+    "002-011_merged_frame_annotations"
+  ]
+}

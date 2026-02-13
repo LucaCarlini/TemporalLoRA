@@ -1,0 +1,35 @@
+# Manuscript (local draft)
+Luca_Carlini_UCL_POLIMI_MICCAI (2).pdf
+
+# Python cache/build
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Training outputs and logs
+outputs/
+checkpoints*/
+wandb/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.log
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
